@@ -1,0 +1,10 @@
+torch>=2.0.0
+torchvision
+opencv-python
+numpy
+pyyaml
+matplotlib
+onnx
+onnxruntime
+tqdm
+tensorrt
