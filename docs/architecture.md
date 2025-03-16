@@ -27,3 +27,5 @@ PyTorch (Training) -> ONNX (Export) -> TensorRT (Optimization) -> Jetson Nano (I
 <!-- update -->
 
 <!-- update -->
+
+<!-- revised by Tung Le -->
