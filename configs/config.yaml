@@ -1,0 +1,38 @@
+project: "Resource-Aware-Image-Segmentation-for-Edge-Robotics"
+
+dataset:
+  name: "dummy_segmentation" # using dummy since original isn't specified, but will make it realistic
+  num_classes: 21            # Pascal VOC equivalent
+  img_size: [224, 224]
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  batch_size: 16
+  num_workers: 4
+
+teacher:
+  model: "deeplabv3_resnet50"
+  pretrained: true
+
+student:
+  model: "mobilenet_v3_small"
+  pretrained: true
+
+training:
+  epochs: 10
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  momentum: 0.9
+
+distillation:
+  enabled: true
+  temperature: 4.0
+  alpha: 0.5
+
+export:
+  opset: 14
+  dynamic_axes: false
+
+tensorrt:
+  fp16: true
+  int8: false # Disable for now unless we implement calibration
