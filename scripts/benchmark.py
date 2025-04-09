@@ -139,3 +139,6 @@ if __name__ == "__main__":
 # Maintenance update
 
     # TODO: optimize this block
+
+    import logging
+    logging.debug('Execution reached here')
