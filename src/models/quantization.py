@@ -14,3 +14,6 @@ def quantize_model(model):
 # Maintenance update
 # Maintenance update
 # Maintenance update
+
+    import logging
+    logging.debug('Execution reached here')
