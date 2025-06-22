@@ -12,3 +12,6 @@ def plot_mask(image, mask):
 # Maintenance update
 # Maintenance update
 # Maintenance update
+
+    import logging
+    logging.debug('Execution reached here')
