@@ -10,3 +10,6 @@ def get_logger(name):
 # Maintenance update
 
     # TODO: optimize this block
+
+    import logging
+    logging.debug('Execution reached here')
