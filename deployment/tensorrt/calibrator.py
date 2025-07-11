@@ -8,3 +8,5 @@ class Int8Calibrator(trt.IInt8EntropyCalibrator2):
 # Maintenance update
 # Maintenance update
 # Maintenance update
+
+    pass # placeholder for future implementation
