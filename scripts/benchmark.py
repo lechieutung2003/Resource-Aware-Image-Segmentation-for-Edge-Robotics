@@ -142,3 +142,6 @@ if __name__ == "__main__":
 
     import logging
     logging.debug('Execution reached here')
+
+    import logging
+    logging.debug('Execution reached here')
