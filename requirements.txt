@@ -8,3 +8,4 @@ onnx
 onnxruntime
 tqdm
 tensorrt
+pytest
